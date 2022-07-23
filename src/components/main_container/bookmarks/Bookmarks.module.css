@@ -1,0 +1,60 @@
+.bookmarks_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    max-width: 400px;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgb(55, 55, 142);
+    transition: all 0.5s linear;
+}
+
+.bookmarks_header_container_show {
+    transform: translateX(0);
+}
+
+.bookmarks_header_container_hidden {
+    transform: translateX(-400px);
+}
+
+.bookmark_items_container {
+    padding: 0 10px;
+}
+
+.bookmark_item::before {
+    content: "•";
+    margin-right: 10px;
+    color: #aaa;
+}
+
+.bookmark_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark_item > a {
+    width: 90%;
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bookmark_item > a:hover {
+    color: lavender;
+}
+
+.bookmark_item > button {
+    border: none;
+    color: #aaa;
+    background-color: inherit;
+    cursor: pointer;
+} 
+
+.bookmark_item > button:hover {
+    color: lavender;
+} 
+
+.bookmark_item > button:active {
+    transform: scale(.9);
+}

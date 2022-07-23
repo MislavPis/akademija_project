@@ -1,0 +1,26 @@
+.navigation_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation_bookmarks_container {
+    position: absolute;
+    left: 25px;
+}
+
+.navigation_bookmarks_button {
+    border: none;
+    background-color: inherit;
+    color: rgb(55, 55, 142);
+    cursor: pointer;
+}
+
+.navigation_bookmarks_button:active {
+    transform: scale(0.9);
+}
+
+.navigation_bookmarks_button_icon {
+    font-size: 18px;
+}

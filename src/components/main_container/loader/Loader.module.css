@@ -1,0 +1,36 @@
+.loader_container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgba(70, 70, 70, 0.5);
+}
+
+.loader_text {
+    letter-spacing: 3px;
+    color: #333;
+}
+
+.loader_spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-right: none;
+    border-top: none;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
